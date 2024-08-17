@@ -15,5 +15,6 @@ public class Main {
         tree.add(99);
         printer.printTree(tree);
         tree.postOrder();
+        tree.preOrderRec();
     }
 }
