@@ -2,19 +2,21 @@ package com.example;
 
 public class Main {
     public static void main(String[] args) {
-        tree tree = new tree();
-        tree.add(0);
-        tree.add(17);
-        tree.add(85);
-        tree.add(35);
-        tree.add(1);
-        tree.add(7);
-        tree.add(9);
-        tree.add(13);
-        tree.add(55);
-        tree.add(99);
-        printer.printTree(tree);
-        tree.postOrder();
-        tree.preOrderRec();
+        AVLTree avlTree = new AVLTree();
+
+        avlTree.add(10);
+        avlTree.add(20);
+        avlTree.add(30);
+        avlTree.add(40);
+        avlTree.add(50);
+        avlTree.add(25);
+
+        System.out.println("Árvore AVL após inserções:");
+        avlTree.printTree();
+
+        avlTree.remove(40);
+
+        System.out.println("\nÁrvore AVL após remoção do valor 40:");
+        avlTree.printTree();
     }
 }
